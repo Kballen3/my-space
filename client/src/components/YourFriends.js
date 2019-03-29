@@ -6,7 +6,7 @@ class YourFriends extends React.Component {
     state = { friends: [], }
 
     componentDidMount() {
-        axios.get('.api/your_friends')
+        axios.get('/api/my_friends')
             .then( response => this.setState({ friends: response.data, }))
     }
 

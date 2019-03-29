@@ -14,6 +14,7 @@ class Home extends React.Component {
 
     friendSuggestion = () => {
         const {friends,} = this.state
+        debugger
         if (friends.length) {
             const index = Math.floor(Math.random() * friends.length)
             return friends[index]
@@ -60,7 +61,7 @@ class Home extends React.Component {
                             </Button>
                         </Card.Content>
                     </Card>
-                    <Link to="/my_cats">
+                    <Link to="/my_friends">
                         <Button color="blue">
                             List of Friends
                         </Button>

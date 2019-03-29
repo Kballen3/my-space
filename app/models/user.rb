@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
     Friend.where("id NOT IN (?)", ids).order("RANDOM()")
   end
 
-  def self.your(ids)
+  def self.other(ids)
     ids = ids.empty? ? [0] : ids
     Friend.where("id IN (?)", ids)   
   end

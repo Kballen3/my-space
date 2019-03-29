@@ -18,7 +18,7 @@ const App = () => (
       <Container>
         <Switch>
           <ProtectRoute exact path="/" component={Home} />
-          <ProtectRoute exact path="/your_friends" component={YourFriends} />
+          <ProtectRoute exact path="/my_friends" component={YourFriends} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route component={NoMatch} />
