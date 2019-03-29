@@ -8,6 +8,7 @@ import NoMatch from './components/NoMatch'
 import Register from './components/Register'
 import FetchUser from './components/FetchUser'
 import ProtectRoute from './components/ProtectRoute'
+import YourFriends from './components/YourFriends'
 
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
       <Container>
         <Switch>
           <ProtectRoute exact path="/" component={Home} />
+          <ProtectRoute exact path="/your_friends" component={YourFriends} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route component={NoMatch} />

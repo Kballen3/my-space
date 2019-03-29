@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   include DeviseTokenAuth::Concerns::User
 
-  serialize :your_friends, Array
+  serialize :other_friends, Array
 
   def self.random_friend(ids)
     ids = ids.empty? ? [0] : ids
