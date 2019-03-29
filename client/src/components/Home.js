@@ -53,10 +53,10 @@ class Home extends React.Component {
                             </Card.Header>
                         </Card.Content>
                         <Card.Content extra>
-                            <Button color="red" icon basic onClick={() => this.addFriend(friend.id)}>
+                            <Button color="red" icon basic onClick={() => this.rejectFriend(friend.id)}>
                                 <Icon name="thumbs down" />
                             </Button>
-                            <Button color="green" icon basic onClick={() => this.rejectFriend(friend.id)}>
+                            <Button color="green" icon basic onClick={() => this.addFriend(friend.id)}>
                                 <Icon name="thumbs up" />
                             </Button>
                         </Card.Content>
